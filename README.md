@@ -11,4 +11,4 @@ or
 $ pip install -r requirements.txt
 ```
 2. Rename `.env.example` to `.env` and configure it.
-3. And run start.bat for Windows or start.start.sh for Linux / MacOS.
+3. And run `start.bat` for Windows or `start.sh` for Linux / MacOS.
