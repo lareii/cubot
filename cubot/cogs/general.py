@@ -32,12 +32,6 @@ class General(commands.Cog):
 
         await interaction.response.send_message(embed=embed)
 
-    @slash_command(description="Displays information about the bot.", guild_ids=[int(getenv("GUILD"))])
-    async def debug(self, interaction: Interaction):
-        embed = embed_builder()
-
-        await interaction.response.send_message(embed=embed)
-
     @commands.Cog.listener()
     async def on_message(self, message):
         if message.author.bot:
