@@ -21,3 +21,4 @@ for file in listdir("./cubot/cogs"):
         log("INIT", f"{cmd} command loaded.")
 
 CUBOT.run(TOKEN)
+#test
