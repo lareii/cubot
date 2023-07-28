@@ -30,6 +30,7 @@ class Bot(commands.Bot):
 
     async def on_application_command_error(self, interaction: Interaction, error):
         error = getattr(error, 'original', error)
+        
         if isinstance(error, CallableOnCooldown):
             await interaction.send(error)
         if isinstance(error, application_checks.errors.ApplicationMissingRole):
